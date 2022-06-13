@@ -9,3 +9,4 @@
 - id는 중복되지 않는(한 페이지에서 한번 쓰면 더이상 그 이름을 쓸 수 없다.)
 - css에서 영양력을 가지는 순서 -> id -> class -> html_tag -> 내부 style=""
 + document.querySelect -> html내부의 tag선택
+- function functionname(변수) { }
