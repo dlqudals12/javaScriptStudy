@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .js{
+      font-weight: bold;
+      color: red;
+    }
+    #first{
+      color: green;
+    }
+    span{
+      color: blue;
+    }
+
+  </style>
+  <title></title>
+</head>
+<body>
+  <h1>JavaScript</h1>
+  <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  ">
+
+  <input id="night_day" type="button" value="night" onclick="
+    if (document.querySelector('#night_day').value == 'night') {
+      document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('#night_day').value = 'day';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('#night_day').value = 'night';
+    }
+  ">
+  <h2 style="color:powderblue;background-color:coral">JavaScript</h2>
+  <p><span class="js" id="first">JavaScript</span>
+  The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web
+    resources are identified by Uniform Resource <span class="js">Locators</span> (URLs), interlinked by hypertext links, and can
+    be accessed <span>via</span> the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989.
+  He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web
+  browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and
+  to the general public on the Internet in August 1991.</p>
+  <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+
+    if (this.value == 'night') {
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      document.querySelector('#night_day2').value = 'day';
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      document.querySelector('#night_day2').value = 'night';
+    } ">
+
+</body>
+</html>
